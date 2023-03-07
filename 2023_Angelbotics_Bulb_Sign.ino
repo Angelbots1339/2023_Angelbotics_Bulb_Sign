@@ -70,7 +70,15 @@ void progressionpattern(int N) {
     
       delay(60);
     }
-    delay(500);
+    
+    for(int I = 0; I <= 11; I++) {
+      for(int i = 0; i <= letters[I]; i++) {
+        leds[i] = CRGB(0,0,0);
+      }
+      FastLED.show();
+    
+      delay(60);
+    }
 
     turnoff();
     FastLED.show();
